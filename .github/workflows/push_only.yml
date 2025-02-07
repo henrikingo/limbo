@@ -36,7 +36,7 @@ jobs:
           nyrkio-enable: true
           # Get yours from https://nyrkio.com/docs/getting-started
           nyrkio-token: ${{ secrets.STAGING_JWT_TOKEN }}
-          nyrkio-api-root: https://nyrkio.com/api/v0
+          nyrkio-api-root: https://staging.nyrkio.com/api/v0
           nyrkio-org: nyrkio
 
           # Old way...
