@@ -31,7 +31,7 @@ jobs:
       #       cp .github/data/limbo-cargo-output.txt output.txt
 
       - name: Analyze benchmark result with Nyrkiö
-        uses: nyrkio/github-action-benchmark@HEAD
+        uses: henrikingo/github-action-benchmark@HEAD
         with:
           name: turso
           tool: criterion
@@ -78,7 +78,7 @@ jobs:
         run: make clickbench
 
       - name: Analyze LIMBO result with Nyrkiö
-        uses: nyrkio/github-action-benchmark@HEAD
+        uses: henrikingo/github-action-benchmark@HEAD
         with:
           name: clickbench/limbo
           tool: time
@@ -111,7 +111,7 @@ jobs:
           gh-repository: null
 
       - name: Analyze SQLITE3 result with Nyrkiö
-        uses: nyrkio/github-action-benchmark@HEAD
+        uses: henrikingo/github-action-benchmark@HEAD
         with:
           name: clickbench/sqlite3
           tool: time
