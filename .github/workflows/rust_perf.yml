@@ -24,7 +24,7 @@ jobs:
       - name: Bench
         run: cargo bench  2>&1 | tee output.txt
       - name: Analyze benchmark result with Nyrkiö
-        uses: nyrkio/change-detection@HEAD
+        uses: henrikingo/change-detection@HEAD
         with:
           name: turso
           tool: criterion
@@ -65,7 +65,7 @@ jobs:
         run: make clickbench
 
       - name: Analyze LIMBO result with Nyrkiö
-        uses: nyrkio/change-detection@HEAD
+        uses: henrikingo/change-detection@HEAD
         with:
           name: clickbench/limbo
           tool: time
